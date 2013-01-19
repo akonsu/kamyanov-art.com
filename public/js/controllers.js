@@ -7,6 +7,15 @@
  .controller('indexController', [
      /******/ '$scope',
      function ($scope) {
+         $scope.caption = 'Игорь Камянов';
+         $scope.sections = [
+             'биография',
+             'работы',
+             'выставки',
+             'тексты',
+             'публикации',
+             'контакты'
+         ];
      }
  ])
 );
