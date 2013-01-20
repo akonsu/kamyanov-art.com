@@ -8,7 +8,13 @@
      /******/ '$routeProvider',
      function ($routeProvider) {
          $routeProvider
-             .when('/', {templateUrl: '/templates/index.html', controller: 'indexController'})
+             .when('/', {templateUrl: '/templates/index.html', controller: 'indexContr'})
+             .when('/biography', {templateUrl: '/templates/biography.html', controller: 'indexContr'})
+             .when('/works', {templateUrl: '/templates/works.html', controller: 'indexContr'})
+             .when('/exhibitions', {templateUrl: '/templates/exhibitions.html', controller: 'indexContr'})
+             .when('/texts', {templateUrl: '/templates/texts.html', controller: 'indexContr'})
+             .when('/publications', {templateUrl: '/templates/publications.html', controller: 'indexContr'})
+             .when('/contact', {templateUrl: '/templates/contact.html', controller: 'indexContr'})
              .otherwise({redirectTo: '/'});
      }])
  .run([

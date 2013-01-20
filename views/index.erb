@@ -27,13 +27,24 @@
       _gaq.push(['_setAccount', 'UA-9811055-5']);
       _gaq.push(['_setDomainName', 'kamyanov-art.com']);
       _gaq.push(['_trackPageview']);
-
       (function () {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    <span class="navbar" ng-controller="navContr">
+      <div ng-switch on="is_root()">
+        <span ng-switch-when="true" class="caption">{{caption}}</span>
+        <a ng-switch-default class="caption" href="#/">{{caption}}</a>
+      </div>
+      <ul class="sections">
+        <li ng-repeat="section in sections" ng-switch on="section_active(section)">
+          <span ng-switch-when="true">{{section.name}}</span>
+          <a ng-switch-default ng-href="#/{{section.url}}">{{section.name}}</a>
+        </li>
+      </ul>
+    </span>
     <div ng-view></div>
   </body>
 </html

@@ -4,18 +4,29 @@
 
 (angular
  .module('app.controllers', ['ng', 'app.services'])
- .controller('indexController', [
+ .controller('indexContr', [
      /******/ '$scope',
      function ($scope) {
+     }
+ ])
+ .controller('navContr', [
+     /******/ '$scope', '$location',
+     function ($scope,   $location) {
          $scope.caption = 'Игорь Камянов';
          $scope.sections = [
-             'биография',
-             'работы',
-             'выставки',
-             'тексты',
-             'публикации',
-             'контакты'
+             {name: 'биография', url: 'biography'},
+             {name: 'работы', url: 'works'},
+             {name: 'выставки', url: 'exhibitions'},
+             {name: 'тексты', url: 'texts'},
+             {name: 'публикации', url: 'publications'},
+             {name: 'контакты', url: 'contact'}
          ];
+         $scope.is_root = function () {
+             return $location.path() === '/';
+         };
+         $scope.section_active = function (section) {
+             return section.url === $location.path().substring(1);
+         };
      }
  ])
 );
