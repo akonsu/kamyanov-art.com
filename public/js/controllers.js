@@ -17,7 +17,6 @@
              {name: 'биография', url: 'biography'},
              {name: 'работы', url: 'works'},
              {name: 'выставки', url: 'exhibitions'},
-             {name: 'тексты', url: 'texts'},
              {name: 'публикации', url: 'publications'},
              {name: 'контакты', url: 'contact'}
          ];

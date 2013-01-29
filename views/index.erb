@@ -33,18 +33,23 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    <span class="navbar" ng-controller="navContr">
-      <div ng-switch on="is_root()">
-        <span ng-switch-when="true" class="caption">{{caption}}</span>
-        <a ng-switch-default class="caption" href="#/">{{caption}}</a>
+    <div id="container">
+      <div id="navbar" ng-controller="navContr">
+        <div id="caption" ng-switch on="is_root()">
+          <span ng-switch-when="true">{{caption}}</span>
+          <a ng-switch-default href="#/">{{caption}}</a>
+        </div>
+        <ul id="sections">
+          <li ng-repeat="section in sections" ng-switch on="section_active(section)">
+            <span ng-switch-when="true">{{section.name}}</span>
+            <a ng-switch-default ng-href="#/{{section.url}}">{{section.name}}</a>
+          </li>
+        </ul>
       </div>
-      <ul class="sections">
-        <li ng-repeat="section in sections" ng-switch on="section_active(section)">
-          <span ng-switch-when="true">{{section.name}}</span>
-          <a ng-switch-default ng-href="#/{{section.url}}">{{section.name}}</a>
-        </li>
-      </ul>
-    </span>
-    <div ng-view></div>
+      <div id="content">
+        <div id="view" ng-view></div>
+        <div id="footer"><span class="copyright-char">&copy;</span>Игорь Камянов</div>
+      </div>
+    </div>
   </body>
 </html
