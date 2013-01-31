@@ -53,6 +53,15 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#container #content #view #banner #background {
+    margin: 0 auto 2em auto;
+    padding: 3em;
+    width: 60%;
+}
+#container #content #view #banner #background div {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 3em 6em;
+}
 #footer {
     font-size: 14px;
     line-height: 25px;
