@@ -66,10 +66,11 @@ ul#contacts li {
     padding-top: 1em;
 }
 ul#contacts #contacts-photo {
-    background-image: url('/images/kamyanov.jpg');
+    background-image: url('/images/kamyanov-250x285.jpg');
     background-repeat: no-repeat;
-    background-size: auto 250px;
-    height: 250px;
+    background-size: auto 285px;
+    height: 285px;
+    width: 250px;
 }
 #container #content #view #banner #background {
     background: rgba(255, 255, 255, 0.6);
