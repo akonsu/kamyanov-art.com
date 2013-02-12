@@ -30,14 +30,15 @@ html, body {
     padding: 0 20px;
 }
 #container #navbar #sections a {
+    color: #ffffff;
     line-height: 1em;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 #container #navbar #sections span {
-    background-color: #333333;
-    color: #9d9287;
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1em;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 #container #content {
     display: table-row;
@@ -45,22 +46,35 @@ html, body {
 }
 #container #content #view {
     height: 100%;
-    min-height: 50px;
 }
 #container #content #view #banner {
-    background-image:url('/images/studio-1000.jpg');
+    background-image: url('/images/studio-1000.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
 }
-#container #content #view #banner #background {
-    margin: 0 auto 2em auto;
-    padding: 3em;
-    width: 60%;
+ul#contacts {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 250px;
 }
-#container #content #view #banner #background div {
+ul#contacts h2 {
+    padding-bottom: 1em;
+}
+ul#contacts li {
+    display: block;
+    padding-top: 1em;
+}
+ul#contacts #contacts-photo {
+    background-image: url('/images/kamyanov.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 250px;
+    height: 250px;
+}
+#container #content #view #banner #background {
     background: rgba(255, 255, 255, 0.6);
-    padding: 3em 6em;
+    height: 100%;
+    width: 100%;
 }
 #footer {
     font-size: 14px;
@@ -83,6 +97,14 @@ ul li {
 .copyright-char {
     font-size: 110%;
     margin: 0 0.2em;
+}
+.facebook-link {
+    background-image: url('/images/facebook-16x16.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
 }
 .nobr {
     white-space: nowrap;
