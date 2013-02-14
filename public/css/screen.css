@@ -51,7 +51,7 @@ html, body {
     width: 100%;
 }
 ul#contacts {
-    background-color: #9d9287;
+    background-color: rgba(189, 180, 169, 0.6);
     float: right;
     height: 100%;
     overflow: hidden;
