@@ -1,9 +1,10 @@
 /*-*- mode:css; coding:utf-8; -*-*/
 
-@import url(http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic);
+/*@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=cyrillic);*/
 
 * {
-    font-family: 'PT Serif', Georgia, serif;
+    font-family: 'PT Sans', Verdana, sans-serif;
 }
 body {
     font-size: 16px;
