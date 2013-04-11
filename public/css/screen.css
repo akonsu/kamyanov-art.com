@@ -11,12 +11,17 @@ html, body {
     height: 100%;
 }
 #container {
+    background-attachment: fixed;
+    background-image: url('/images/studio-1000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     border-collapse: collapse;
     display: table;
     height: 100%;
     width: 100%;
 }
 #container #navbar {
+    background-color: #9d9287;
     display: table-row;
 }
 #container #navbar #caption {
@@ -39,9 +44,6 @@ html, body {
     padding: 0 20px;
 }
 #container #content {
-    background-image: url('/images/studio-1000.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     display: table-row;
     height: 100%;
 }
@@ -67,10 +69,13 @@ div#biography {
     height: 100%;
     margin: 0 auto;
     padding: 2em 3em 5em;
-    width: 50em;
+    width: 40em;
 }
 div#biography h4 {
     margin: 1em 0;
+}
+div#biography .p {
+    padding: 1em 0;
 }
 div#contacts {
     background: rgba(255, 255, 255, 0.5);
@@ -92,17 +97,14 @@ div#contacts ul li {
     display: block;
     padding-bottom: 1em;
 }
-body {
-    background-color: #9d9287;
-}
-ul {
+ul.hlist {
     list-style-type: none;
 }
-ul li {
+ul.hlist li {
     display: inline;
 }
-ul.vlist li {
-    display: block;
+ul.vlist {
+    margin: 1em 2em;
 }
 .clear {
     clear: both;
