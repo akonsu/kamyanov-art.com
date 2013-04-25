@@ -1,4 +1,4 @@
-/* -*- mode:javascript; coding:utf-8; -*- */
+/* -*- coding:utf-8; mode:javascript; -*- */
 
 'use strict';
 
@@ -8,7 +8,7 @@
      /******/ '$routeProvider',
      function ($routeProvider) {
          $routeProvider
-             .when('/', {templateUrl: '/templates/index.html', controller: 'indexContr'})
+             .when('/', {controller: 'indexContr'})
              .when('/biography', {templateUrl: '/templates/biography.html', controller: 'indexContr'})
              .when('/works', {templateUrl: '/templates/works.html', controller: 'indexContr'})
              .when('/exhibitions', {templateUrl: '/templates/exhibitions.html', controller: 'indexContr'})
