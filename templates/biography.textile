@@ -1,6 +1,5 @@
-<!-- -*- coding:utf-8; mode:html; -*- -->
-
 <div id="template">
+
   <div id="biography">
     <div>Родился в Москве в 1954.</div>
     <div>Живописи учился у <span class="nobr">Ю. К. Бурджеляна</span>.</div>
